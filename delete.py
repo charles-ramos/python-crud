@@ -2,7 +2,7 @@ import json
 import http.client
 connection = http.client.HTTPSConnection('parseapi.back4app.com', 443)
 connection.connect()
-connection.request('DELETE', '/classes/<CLASS-NAME>', json.dumps({
+connection.request('DELETE', '/classes/<CLASS-NAME>/<OBJECT-ID>', json.dumps({
        "score": 133,
        "playerName": "test Plott",
        "cheatMode": True
